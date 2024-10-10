@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body class="cuerpo">
+   <header class="encabezado">
+
+<nav class="menu">
+    <a class="menu_link" href="#inicio">Inicio</a>
+    <a class="menu_link" href="#about">Sobre Mi</a>
+    <a class="menu_link" href="#skills">Skills</a>
+    <a class="menu_link" href="#proyectos">Proyectos</a>
+    <a class="menu_link" href="#formacion">Formación</a>
+    
+</nav>
+   </header>
+   <main class="principal">
+    <div class="presentacion">
+    <section id="inicio" class="presentacion_contenido">
+        <h1 class="titulo">
+          Mi nombre es Wilmer soy desarrollador frontend
+        </h1>
+        <p class="acerca"> Soy un profesional amante de la tecnología actualmente estoy participando del proyecto 
+            Oracle ONE en Alura Latam. Y puedo ayudarte a digitalizar tu negocio.</p>
+
+     
+
+    </section>
+  
+    <img src="img/port.jpg" class="rendonda" alt="perfil"  >
+
+        </div>
+
+    <section id="about" class="sobre">
+        <h1 class="sobre_mi">Sobre mí</h1>
+        <p class="quien_soy">Soy Wilmer Acosta, un apasionado del desarrollo web y la tecnología. 
+            Aunque inicialmente me formé en Comercio Internacional, actualmente me encuentro aprendiendo desarrollo en JavaScript. 
+            Estoy en constante aprendizaje, mejorando mis habilidades en front-end y aplicando mis conocimientos en proyectos personales. 
+            Mi objetivo es crecer como desarrollador y contribuir con soluciones tecnológicas que impacten positivamente.</p>
+ 
+    
+    </section>
+
+    <section id="skills" class="habilidades">
+        <h1 class="titulo_skills">Skills</h1>
+        <div class="logos">
+         
+            <div class="react">
+         <img src="img/logo-react.svg" alt="logo-react" class="logo_react"  >
+         <p class="react">React</p>
+         </div>
+
+         <div class="javascript">
+
+         <img src="img/javascript.png" alt="Java" class="logo_javascript">
+         <p class="javascript">JavaScript</p>
+        </div>
+
+         <div class="node">
+
+            <img src="img/node.png" alt="logo_node"  class="logo_node">
+            <p class="node">Node JS</p>
+         </div>
+         
+         <div class="css">
+            <img src="img/CSS.png" alt="logo_css" class="logo_css">
+            <p class="css"> CSS </p>
+         </div>
+
+         <div class="java">
+            <img src="img/java.png" alt="logo_java" class="logo_java">
+            <p class="java">Java</p>
+         </div>
+
+        </div>
+
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <h1 class="mis_trabajos"> Mis Proyectos</h1>
+    
+        
+        <div class="carrusel">
+        
+        
+        <div class="carousel-inner">
+        <div class=" carousel-item proyecto_1">
+        <img src="img/proyecto1.png" alt="proyecto1" class="proyecto1">
+
+        <h3> Proyecto 1 </h3>
+
+        </div>
+
+        <div class="carousel-item ">
+           <img src="img/proyecto2.png" alt="proyecto2"  class="proyecto2">
+           <h3> Proyecto 2</h3>
+        </div>
+       
+       
+        <div class="carousel-item ">
+            <img src="img/proyecto3.png" alt="proyecto3" class="proyecto3">
+            <h3>Proyecto 3</h3>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="img/proyecto4.png" alt="proyecto4" class="proyecto4">
+          <h3>Proyecto 4</h3>
+
+        </div>
+
+     </div>
+     <button class="prev"  onclick="moveSlide(-1)"> &#9664; </button>
+     <button class="next" onclick="moveSlide(1)">&#9654;</button>
+    </div>
+    
+    </section>
+
+    <section id="formacion"  class="formacion">
+
+        <h1 class="mi_formacion">Formación académica</h1>
+    <div class="estudios">
+       <div class="udenar">
+        <img src="img/udenar.png" alt="udenar" class="ude_nar">
+        <p class="titulo_udenar">Comercio Internacional</p>
+       </div>
+
+       <div class="platzi">
+        <img src="img/platzi.webp" alt="platzi" class="platzi_u">
+
+        <p class="titulo_platzi"> Cursos Paltzi</p>
+
+       </div>
+
+       <div class="alura">
+
+        <img src="img/alura.webp" alt="logo_alura" class="logo_alura">
+        <p class="titulo_alura">Formacion en Frontent</p>
+       </div>
+
+    </div>
+    </section>
+    <button id="scrollTopBtn" onclick="scrollToTop()">&#8679;</button>
+   
+    <section class="contacto">
+        <div class="contact-container">
+            <h2 class="contact-title">Contacto</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <div class="botonenviar">
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </div>
+            </form>
+    </section>
+
+   </main>
+
+   
+   
+   
+</body>
+</html>
+
